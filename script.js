@@ -88,4 +88,89 @@ function openHoursSection() {
 }
 
 
-/* Call Section */
+/* Open / Close Price Tabs */
+let haircut = document.getElementById("haircut_header");
+let massage = document.getElementById("massage_header");
+let spa = document.getElementById("spa_header");
+let wax = document.getElementById("wax_header");
+
+let haircutBox = document.getElementById("haircut_box");
+let massageBox = document.getElementById("massage_box");
+let spaBox = document.getElementById("spa_box");
+let waxBox = document.getElementById("wax_box");
+
+if(haircut.addEventListener) {
+  haircut.addEventListener("click", openCloseHaircut, false);
+} else if(haircut.attachEvent) {
+  haircut.addEventListener("onclick", openCloseHaircut);
+}
+
+let openHaircut = true;
+function openCloseHaircut() {
+  if(!openHaircut) {
+    haircutBox.style.height = "auto";
+    haircutBox.style.display = "block";
+    openHaircut = !openHaircut;
+  } else {
+    haircutBox.style.height = "0";
+    haircutBox.style.display = "none";
+    openHaircut = !openHaircut;
+  }
+}
+
+if(massage.addEventListener) {
+  massage.addEventListener("click", openCloseMassage, false);
+} else if(massage.attachEvent) {
+  massage.addEventListener("onclick", openCloseMassage);
+}
+
+let openMassage = false;
+function openCloseMassage() {
+  if(!openMassage) {
+    massageBox.style.height = "auto";
+    massageBox.style.display = "block";
+    openMassage = !openMassage;
+  } else {
+    massageBox.style.height = "0px";
+    massageBox.style.display = "none";
+    openMassage = !openMassage;
+  }
+}
+
+if(spa.addEventListener) {
+  spa.addEventListener("click", openCloseSpa, false);
+} else if(spa.attachEvent) {
+  spa.addEventListener("onclick", openCloseSpa);
+}
+
+let openSpa = false;
+function openCloseSpa() {
+  if(!openSpa) {
+    spaBox.style.height = "auto";
+    spaBox.style.display = "block";
+    openSpa = !openSpa;
+  } else {
+    spaBox.style.height = "0";
+    spaBox.style.display = "none";
+    openSpa = !openSpa;
+  }
+}
+
+if(wax.addEventListener) {
+  wax.addEventListener("click", openCloseWax, false);
+} else if(wax.attachEvent) {
+  wax.addEventListener("onclick", openCloseWax);
+}
+
+let openWax = false;
+function openCloseWax() {
+  if(!openWax) {
+    waxBox.style.height = "auto";
+    waxBox.style.display = "block";
+    openWax = !openWax;
+  } else {
+    waxBox.style.height = "0";
+    waxBox.style.display = "none";
+    openWax = !openWax;
+  }
+}
