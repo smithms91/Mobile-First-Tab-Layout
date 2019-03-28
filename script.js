@@ -105,15 +105,13 @@ if(haircut.addEventListener) {
   haircut.addEventListener("onclick", openCloseHaircut);
 }
 
-let openHaircut = true;
+let openHaircut = false;
 function openCloseHaircut() {
-  if(!openHaircut) {
-    haircutBox.style.height = "auto";
-    haircutBox.style.display = "block";
+  if(openHaircut) {
+    haircutBox.style.maxHeight = "400px";
     openHaircut = !openHaircut;
   } else {
-    haircutBox.style.height = "0";
-    haircutBox.style.display = "none";
+    haircutBox.style.maxHeight = "0px";
     openHaircut = !openHaircut;
   }
 }
@@ -127,12 +125,10 @@ if(massage.addEventListener) {
 let openMassage = false;
 function openCloseMassage() {
   if(!openMassage) {
-    massageBox.style.height = "auto";
-    massageBox.style.display = "block";
+    massageBox.style.maxHeight = "400px";
     openMassage = !openMassage;
   } else {
-    massageBox.style.height = "0px";
-    massageBox.style.display = "none";
+    massageBox.style.maxHeight = "0px";
     openMassage = !openMassage;
   }
 }
@@ -146,12 +142,10 @@ if(spa.addEventListener) {
 let openSpa = false;
 function openCloseSpa() {
   if(!openSpa) {
-    spaBox.style.height = "auto";
-    spaBox.style.display = "block";
+    spaBox.style.maxHeight = "400px";
     openSpa = !openSpa;
   } else {
-    spaBox.style.height = "0";
-    spaBox.style.display = "none";
+    spaBox.style.maxHeight = "0px";
     openSpa = !openSpa;
   }
 }
@@ -165,12 +159,10 @@ if(wax.addEventListener) {
 let openWax = false;
 function openCloseWax() {
   if(!openWax) {
-    waxBox.style.height = "auto";
-    waxBox.style.display = "block";
+    waxBox.style.maxHeight = "400px";
     openWax = !openWax;
   } else {
-    waxBox.style.height = "0";
-    waxBox.style.display = "none";
+    waxBox.style.maxHeight = "0px";
     openWax = !openWax;
   }
 }
