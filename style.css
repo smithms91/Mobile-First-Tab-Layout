@@ -10,17 +10,26 @@
 body {
   height: 100vh;
   overflow: hidden;
-  background-image: url("images/bg.png");
+  background: linear-gradient(rgb(236, 240, 237), rgb(236, 240, 237));
   /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center top;
-  background-color: linear-gradient(rgba(255,255,255), rgb(193, 226, 193));
 }
 
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
   color: #eee;
+}
+
+/* Logo */
+.logo {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
 }
 
 /* Tabs */
