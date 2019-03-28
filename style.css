@@ -42,7 +42,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  border-radius: 2px;
 }
 
 /* Sections */
