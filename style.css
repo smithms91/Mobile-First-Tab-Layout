@@ -1,0 +1,139 @@
+*::before,
+*::after,
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ outline: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("images/bg.png");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: linear-gradient(rgba(255,255,255), rgb(193, 226, 193));
+}
+
+/* Tabs */
+.tab {
+  position: absolute;
+  background-color: #158e00;
+  padding: 10px 20px;
+  z-index: -1000;
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sections */
+.section {
+  transition: all 1s;
+  position: fixed;
+  z-index: 100;
+}
+
+/* Call Section */
+#call_section {
+  background-color: #158e00;
+  width: 80%;
+  height: 100%;
+  transform: translateX(-100%);
+}
+
+#call_tab {
+  top: 35%;
+  transform: rotate(90deg);
+  right: -105px;
+}
+
+#call_tab h1 {
+  transform: rotate(-180deg);
+}
+
+/* FB Section */
+#fb_section {
+  background-color: #158e00;
+  width: 80%;
+  height: 100%;
+  transform: translateX(125%);
+  transition: all 1s;
+}
+
+#fb_tab {
+  top: 35%;
+  transform: rotate(90deg);
+  left: -100px;
+}
+
+#fb_tab h1 {
+  transform: rotate(180deg);
+}
+
+/* Price Section */
+#price_section {
+  background-color: #158e00;
+  width: 80%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+#price_tab {
+  top: 65%;
+  transform: rotate(90deg);
+  right: -105px;
+}
+
+#price_tab h1 {
+  transform: rotate(-180deg);
+}
+
+/* Staff Section */
+#staff_section {
+  background-color: #158e00;
+  width: 80%;
+  height: 100%;
+  transform: translateX(125%);
+  transition: all 1s;
+}
+
+#staff_tab {
+  top: 65%;
+  transform: rotate(90deg);
+  left: -100px;
+}
+
+#staff_tab h1 {
+  transform: rotate(-180deg);
+}
+
+
+/* Hours Section */
+#hours_section {
+  background-color: #158e00;
+  width: 100%;
+  height: 45%;
+  transform: translateY(100%);
+  transition: all 1s;
+  bottom: 0;
+  transition: all 1s;
+}
+
+#hours_tab {
+  top: -60px;
+  left: 50%;
+  transform: rotate(-180deg) translateX(50%);
+  transition: all 1s;
+}
+
+#hours_tab h1 {
+  transform: rotate(-180deg);
+}
+
+
+
