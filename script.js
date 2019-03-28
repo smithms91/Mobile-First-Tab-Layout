@@ -31,7 +31,7 @@ function openPriceSection() {
     priceOpen = !priceOpen;
   } else {
     priceSection.style.transform = "translateX(-100%)";
-    hoursBtn.style.top = "-60px";
+    hoursBtn.style.top = "-55px";
     priceOpen = !priceOpen;
   }
 }
@@ -59,7 +59,7 @@ function openStaffSection() {
     staffOpen = !staffOpen;
   } else {
     staffSection.style.transform = "translateX(125%)";
-    hoursBtn.style.top = "-60px";
+    hoursBtn.style.top = "-55px";
     staffOpen = !staffOpen;
   }
 

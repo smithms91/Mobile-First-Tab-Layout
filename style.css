@@ -11,7 +11,7 @@ body {
   height: 100vh;
   overflow: hidden;
   background-image: url("images/bg.png");
-  background-size: contain;
+  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center top;
   background-color: linear-gradient(rgba(255,255,255), rgb(193, 226, 193));
@@ -26,7 +26,6 @@ h1 {
 /* Tabs */
 .tab {
   position: absolute;
-  background-color: #158e00;
   padding: 10px 20px;
   z-index: -1000;
   width: 150px;
@@ -34,6 +33,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 /* Sections */
@@ -54,11 +54,14 @@ h1 {
 #call_tab {
   top: 35%;
   transform: rotate(90deg);
-  right: -105px;
+  right: -100px;
+  box-shadow: 1px -2px 3px rgba(0,0,0,0.25);
+  background: linear-gradient(#116602, #158e00);
 }
 
 #call_tab h1 {
   transform: rotate(-180deg);
+  text-shadow: -1px -2px rgba(0,0,0,0.25);
 }
 
 /* FB Section */
@@ -74,6 +77,12 @@ h1 {
   top: 35%;
   transform: rotate(90deg);
   left: -100px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.25);
+  background: linear-gradient(#158e00, #116602);
+}
+
+#fb_tab h1 {
+  text-shadow: -1px -2px rgba(0,0,0,0.25);
 }
 
 .fb_iframe_widget_fluid {
@@ -93,11 +102,14 @@ h1 {
 #price_tab {
   top: 65%;
   transform: rotate(90deg);
-  right: -105px;
+  right: -100px;
+  box-shadow: 1px -2px 3px rgba(0,0,0,0.25);
+  background: linear-gradient(#116602, #158e00);
 }
 
 #price_tab h1 {
   transform: rotate(-180deg);
+  text-shadow: -1px -2px rgba(0,0,0,0.25);
 }
 
 /* Staff Section */
@@ -113,6 +125,12 @@ h1 {
   top: 65%;
   transform: rotate(90deg);
   left: -100px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.25);
+  background: linear-gradient(#158e00, #116602);
+}
+
+#staff_tab h1 {
+  text-shadow: -1px -2px rgba(0,0,0,0.25);
 }
 
 
@@ -128,15 +146,37 @@ h1 {
 }
 
 #hours_tab {
-  top: -60px;
+  top: -55px;
   left: 50%;
   transform: rotate(-180deg) translateX(50%);
   transition: all 1s;
+  box-shadow: -1px 2px 3px rgba(0,0,0,0.25);
+  background: linear-gradient(#158e00, #116602);
 }
 
 #hours_tab h1 {
   transform: rotate(-180deg);
+  text-shadow: -1px -2px rgba(0,0,0,0.25);
 }
 
+.svg img {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+}
 
+/* Nick */
+.nick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.nick img {
+  width: 200px;
+  padding-top: 150px;
+  z-index: 80;
+}
 
