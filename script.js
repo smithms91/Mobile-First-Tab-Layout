@@ -86,3 +86,6 @@ function openHoursSection() {
   }
   console.log("test");
 }
+
+
+/* Call Section */
