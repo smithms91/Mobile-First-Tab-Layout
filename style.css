@@ -11,10 +11,16 @@ body {
   height: 100vh;
   overflow: hidden;
   background-image: url("images/bg.png");
-  /* background-size: contain; */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
   background-color: linear-gradient(rgba(255,255,255), rgb(193, 226, 193));
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  color: #eee;
 }
 
 /* Tabs */
@@ -70,8 +76,9 @@ body {
   left: -100px;
 }
 
-#fb_tab h1 {
-  transform: rotate(180deg);
+.fb_iframe_widget_fluid {
+  left: -90px;
+  top: 25%;
 }
 
 /* Price Section */
@@ -106,10 +113,6 @@ body {
   top: 65%;
   transform: rotate(90deg);
   left: -100px;
-}
-
-#staff_tab h1 {
-  transform: rotate(-180deg);
 }
 
 
