@@ -102,13 +102,12 @@
       <h1>HOURS <i class="far fa-clock"></i></h1>
     </div>
     <div class="hours">
-      <p>Monday: 9-7pm</p>
-      <p>Tuesday: 9-7pm</p>
-      <p>Wednesday: 9-7pm</p>
-      <p>Thursday: 9-7pm</p>
-      <p>Friday: 9-7pm</p>
+      <p>Monday - Friday: 9-7pm</p>
       <p>Saturday: 9-5pm</p>
       <p>Sunday: Closed</p>
+    </div>
+    <div id="map_area">
+      <div id="map"></div>
     </div>
   </div>
 
@@ -120,8 +119,18 @@
     <h2>Home of<br />the<br /><span class="money">Money Fade</span></h2>
   </div>
 
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9B3Uiq3Xg6Ct8dH6aQDE-dj8ryQtZuMM&callback=initMap" async defer></script>
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=2373717056189222&autoLogAppEvents=1"></script>
   <script src="script.js"></script>
+  <script>
+    let map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 42.539930, lng: -82.882930},
+        zoom: 15
+      });
+    }
+  </script>
 </body>
 </html>
