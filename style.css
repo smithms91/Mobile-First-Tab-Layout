@@ -44,6 +44,7 @@ h1 {
   align-items: center;
   border-radius: 2px;
   font-size: 1.2em !important;
+  cursor: pointer;
 }
 
 /* Sections */
@@ -111,6 +112,7 @@ h1 {
   color: #ddd;
   font-family: "Open Sans", sans-serif;
   padding-top: 20px;
+  padding-right: 20px;
   background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
   background-position: center;
 }
@@ -141,20 +143,29 @@ h1 {
   text-align: center;
 }
 
+/* Price list */
+#price_section p {
+  margin-bottom: 5px;
+}
+
 #haircut_header {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 #spa_header {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 #massage_header {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 #wax_header {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 /* Price Boxes */
@@ -199,6 +210,9 @@ h1 {
   transform: translateX(125%);
   transition: all 1s;
   background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
 }
 
 #staff_tab {
@@ -207,10 +221,50 @@ h1 {
   left: -88px;
   box-shadow: 1px 2px 3px rgba(0,0,0,0.25);
   background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
+  
 }
 
 #staff_tab h1 {
   text-shadow: -1px -2px rgba(0,0,0,0.25);
+}
+
+/* Person */
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.person img {
+  width: 75%;
+  margin: 10px 0;
+}
+
+.person h5 {
+  font-size: 1.2em;
+  color: #eee;
+  font-family: "Open Sans", sans-serif;
+}
+
+.people_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20%;
+  margin-top: 20px;
+  overflow-y: scroll;
+  padding-top: 160px;
+}
+
+.icons {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  color: #eee;
 }
 
 
