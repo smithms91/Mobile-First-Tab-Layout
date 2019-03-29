@@ -110,6 +110,7 @@ h1 {
   padding-left: 20%;
   color: #ddd;
   font-family: "Open Sans", sans-serif;
+  padding-top: 20px;
 }
 
 .container {
@@ -249,17 +250,24 @@ h1 {
   left: 0px;
 }
 
-/* Nick */
-.nick {
+/* Money Fade */
+.moneyfade {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: #222;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  z-index: 100000;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding-top: 150px;
 }
 
-.nick img {
-  width: 200px;
-  padding-top: 150px;
-  z-index: 80;
+.moneyfade .money {
+  font-family: 'Playfair Display', serif;
+  text-transform: none;
+  font-size: 1.4em;
 }
 
