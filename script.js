@@ -107,11 +107,16 @@ if(haircut.addEventListener) {
 
 let openHaircut = false;
 function openCloseHaircut() {
+  let haircutArrow = document.getElementById("haircut_arrow");
   if(openHaircut) {
     haircutBox.style.maxHeight = "400px";
+    haircutArrow.classList.remove("fa-arrow-down");
+    haircutArrow.classList.add("fa-arrow-up");
     openHaircut = !openHaircut;
   } else {
     haircutBox.style.maxHeight = "0px";
+    haircutArrow.classList.remove("fa-arrow-up");
+    haircutArrow.classList.add("fa-arrow-down");
     openHaircut = !openHaircut;
   }
 }
@@ -124,11 +129,16 @@ if(massage.addEventListener) {
 
 let openMassage = false;
 function openCloseMassage() {
+  let massageArrow = document.getElementById("massage_arrow");
   if(!openMassage) {
     massageBox.style.maxHeight = "400px";
+    massageArrow.classList.remove("fa-arrow-down");
+    massageArrow.classList.add("fa-arrow-up");
     openMassage = !openMassage;
   } else {
     massageBox.style.maxHeight = "0px";
+    massageArrow.classList.remove("fa-arrow-up");
+    massageArrow.classList.add("fa-arrow-down");
     openMassage = !openMassage;
   }
 }
@@ -141,11 +151,16 @@ if(spa.addEventListener) {
 
 let openSpa = false;
 function openCloseSpa() {
+  let spaArrow = document.getElementById("spa_arrow");
   if(!openSpa) {
     spaBox.style.maxHeight = "400px";
+    spaArrow.classList.remove("fa-arrow-down");
+    spaArrow.classList.add("fa-arrow-up");
     openSpa = !openSpa;
   } else {
     spaBox.style.maxHeight = "0px";
+    spaArrow.classList.remove("fa-arrow-up");
+    spaArrow.classList.add("fa-arrow-down");
     openSpa = !openSpa;
   }
 }
@@ -158,11 +173,16 @@ if(wax.addEventListener) {
 
 let openWax = false;
 function openCloseWax() {
+  let waxArrow = document.getElementById("wax_arrow");
   if(!openWax) {
     waxBox.style.maxHeight = "400px";
+    waxArrow.classList.remove("fa-arrow-down");
+    waxArrow.classList.add("fa-arrow-up");
     openWax = !openWax;
   } else {
     waxBox.style.maxHeight = "0px";
+    waxArrow.classList.remove("fa-arrow-up");
+    waxArrow.classList.add("fa-arrow-down");
     openWax = !openWax;
   }
 }

@@ -170,6 +170,11 @@ h1 {
   max-height: 400px;
 }
 
+.arrow {
+  font-size: .75em;
+  margin-left: 5px;
+}
+
 #massage_box {
   max-height: 0px;
 }
