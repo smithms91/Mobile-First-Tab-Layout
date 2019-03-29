@@ -10,8 +10,8 @@
 body {
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(rgb(236, 240, 237), rgb(236, 240, 237));
-  /* background-size: contain; */
+  background: url("images/bgbg.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
 }
