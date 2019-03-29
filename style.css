@@ -193,6 +193,7 @@ h1 {
   height: 100%;
   transform: translateX(125%);
   transition: all 1s;
+  background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
 }
 
 #staff_tab {
