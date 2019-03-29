@@ -66,7 +66,7 @@ h1 {
   transform: rotate(90deg);
   right: -90px;
   box-shadow: 1px -2px 3px rgba(0,0,0,0.25);
-  background: linear-gradient(#116602, #158e00);
+  background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
 }
 
 #call_tab h1 {
@@ -88,7 +88,7 @@ h1 {
   transform: rotate(90deg);
   left: -90px;
   box-shadow: 1px 2px 3px rgba(0,0,0,0.25);
-  background: linear-gradient(#158e00, #116602);
+  background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
 }
 
 #fb_tab h1 {
@@ -102,7 +102,7 @@ h1 {
 
 /* Price Section */
 #price_section {
-  background-color: #158e00;
+  background-color: #158e0069;
   width: 80%;
   height: 100%;
   transform: translateX(-100%);
@@ -111,6 +111,8 @@ h1 {
   color: #ddd;
   font-family: "Open Sans", sans-serif;
   padding-top: 20px;
+  background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
+  background-position: center;
 }
 
 .container {
@@ -126,7 +128,7 @@ h1 {
   transform: rotate(90deg);
   right: -88px;
   box-shadow: 1px -2px 3px rgba(0,0,0,0.25);
-  background: linear-gradient(#116602, #158e00);
+  background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
 }
 
 #price_tab h1 {
@@ -198,7 +200,7 @@ h1 {
   transform: rotate(90deg);
   left: -88px;
   box-shadow: 1px 2px 3px rgba(0,0,0,0.25);
-  background: linear-gradient(#158e00, #116602);
+  background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
 }
 
 #staff_tab h1 {
@@ -218,6 +220,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
 }
 
 #hours_tab {
@@ -226,7 +229,7 @@ h1 {
   transform: rotate(-180deg) translateX(50%);
   transition: all 1s;
   box-shadow: -1px 2px 3px rgba(0,0,0,0.25);
-  background: linear-gradient(#158e00, #116602);
+  background: linear-gradient(#158e00c5, #158e00c5), url("images/bgdepth.jpeg");
 }
 
 #hours_tab h1 {
